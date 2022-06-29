@@ -1620,16 +1620,14 @@ warn_changed_key(struct sshkey *host_key)
 	    SSH_FP_DEFAULT);
 	if (fp == NULL)
 		fatal_f("sshkey_fingerprint fail");
-
-	error("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-	error("@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @");
-	error("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-	error("IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!");
-	error("Someone could be eavesdropping on you right now (man-in-the-middle attack)!");
-	error("It is also possible that a host key has just been changed.");
-	error("The fingerprint for the %s key sent by the remote host is\n%s.",
-	    sshkey_type(host_key), fp);
-	error("Please contact your system administrator.");
+	
+	error("OwO what's dis?");
+	error("it is possibwe someone is doing something nasty! OwO");
+	error("someone couwwd be eavesdwopping on u wight now! UwU");
+	error("or maybe the host key just was changed.");
+	error("The fingewpwint fow the %s key sent by the wemote host is\n%s.",
+	      sshkey_type(host_key), fp);
+	error("Pwease contact uw system administwatow.");
 
 	free(fp);
 }
